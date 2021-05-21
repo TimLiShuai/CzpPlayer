@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15400" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15400"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LeftScrollView"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="220" height="203"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6Uc-dg-XNg">
+                    <rect key="frame" x="10" y="179" width="200" height="16"/>
+                    <buttonCell key="cell" type="bevel" title="输入URL" bezelStyle="rounded" alignment="left" imageScaling="proportionallyDown" inset="2" id="MFD-CF-HeV">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="inputURL:" target="-2" id="hwM-eD-kGF"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="k0k-al-IjW">
+                    <rect key="frame" x="10" y="155" width="200" height="16"/>
+                    <buttonCell key="cell" type="bevel" title="本地视频" bezelStyle="rounded" alignment="left" imageScaling="proportionallyDown" inset="2" id="9QK-Qe-Kq1">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="showLocalView:" target="-2" id="9mH-jJ-W22"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="y1W-aQ-Yuf">
+                    <rect key="frame" x="10" y="131" width="200" height="16"/>
+                    <buttonCell key="cell" type="bevel" title="URL links" bezelStyle="rounded" alignment="left" imageScaling="proportionallyDown" inset="2" id="zqS-rh-Crb">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="showUrlLinks:" target="-2" id="fLI-Fe-2Uj"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ucs-xa-YEg">
+                    <rect key="frame" x="10" y="107" width="200" height="16"/>
+                    <buttonCell key="cell" type="bevel" title="多画面播放" bezelStyle="rounded" alignment="left" imageScaling="proportionallyDown" inset="2" id="FCY-Gl-NrW">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="MultPlayer:" target="-2" id="0rZ-gR-2Dv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ucs-xa-YEg" firstAttribute="leading" secondItem="6Uc-dg-XNg" secondAttribute="leading" id="5ep-kN-19q"/>
+                <constraint firstItem="ucs-xa-YEg" firstAttribute="top" secondItem="y1W-aQ-Yuf" secondAttribute="bottom" constant="8" id="9j0-9f-A51"/>
+                <constraint firstAttribute="trailing" secondItem="6Uc-dg-XNg" secondAttribute="trailing" constant="10" id="IrQ-jH-hUx"/>
+                <constraint firstItem="k0k-al-IjW" firstAttribute="leading" secondItem="6Uc-dg-XNg" secondAttribute="leading" id="PtI-T7-Fjp"/>
+                <constraint firstItem="y1W-aQ-Yuf" firstAttribute="trailing" secondItem="6Uc-dg-XNg" secondAttribute="trailing" id="Si8-Hz-2eu"/>
+                <constraint firstItem="k0k-al-IjW" firstAttribute="top" secondItem="6Uc-dg-XNg" secondAttribute="bottom" constant="8" id="Ugd-U2-bhf"/>
+                <constraint firstItem="y1W-aQ-Yuf" firstAttribute="leading" secondItem="6Uc-dg-XNg" secondAttribute="leading" id="Z5o-eG-cad"/>
+                <constraint firstItem="6Uc-dg-XNg" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="10" id="hDF-fG-Pjc"/>
+                <constraint firstItem="6Uc-dg-XNg" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="8" id="jFF-h4-t98"/>
+                <constraint firstItem="ucs-xa-YEg" firstAttribute="trailing" secondItem="6Uc-dg-XNg" secondAttribute="trailing" id="qe9-7k-BkI"/>
+                <constraint firstItem="k0k-al-IjW" firstAttribute="trailing" secondItem="6Uc-dg-XNg" secondAttribute="trailing" id="r1a-1I-fSY"/>
+                <constraint firstItem="y1W-aQ-Yuf" firstAttribute="top" secondItem="k0k-al-IjW" secondAttribute="bottom" constant="8" id="slt-ob-Vjn"/>
+            </constraints>
+            <point key="canvasLocation" x="-235" y="69"/>
+        </customView>
+    </objects>
+</document>

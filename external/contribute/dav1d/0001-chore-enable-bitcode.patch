@@ -1,0 +1,29 @@
+From 5ce4a472f2111beadcd4dc0f8779b1f8e2f97562 Mon Sep 17 00:00:00 2001
+From: pingkai <pingkai010@gmail.com>
+Date: Tue, 17 Mar 2020 18:36:58 +0800
+Subject: [PATCH] chore: enable bitcode
+
+Signed-off-by: pingkai <pingkai010@gmail.com>
+---
+ meson.build | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+diff --git a/meson.build b/meson.build
+index 971b700..f81ef90 100644
+--- a/meson.build
++++ b/meson.build
+@@ -27,7 +27,10 @@ project('dav1d', ['c'],
+     default_options: ['c_std=c99',
+                       'warning_level=2',
+                       'buildtype=release',
+-                      'b_ndebug=if-release'],
++                      'b_ndebug=if-release',
++                      'b_bitcode=true',
++                      'b_asneeded=false',
++                      ],
+     meson_version: '>= 0.47.0')
+ 
+ dav1d_soname_version       = '4.0.0'
+-- 
+2.14.1
+

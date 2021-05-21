@@ -1,0 +1,12 @@
+{
+    "maxDelayTime": "5000",
+    "highBufferDuration": "3000",
+    "startBufferDuration": "500",
+    "maxBufferDuration": "50000",
+    "networkTimeout": "15000",
+    "referer": "",
+    "httpProxy": "",
+    "networkRetryCount": "2",
+    "maxDuration": "300",
+    "maxSizeMB": "200"
+}

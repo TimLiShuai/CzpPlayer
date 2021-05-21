@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <!--版本号 start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="@string/setting_version"/>
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+            <!--版本号 end-->
+
+            <!--硬解 start-->
+            <CheckBox
+                android:id="@+id/hardwaredecoder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/switch_bkg"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="@string/hardware_decoder" />
+            <!--硬解 end-->
+
+
+            <!-- 选择播放器 start -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/title_select_player"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/radio_btn_cicada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:checked="true"
+                    android:text="@string/title_cicada_player"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_btn_exo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/title_exo_player"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_btn_media"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/title_media_player"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+            <!-- 选择播放器 end -->
+
+            <!--黑名单 start-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"/>
+
+                <Button
+                    android:id="@+id/blacklit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/black_list"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <!--黑名单 end-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
