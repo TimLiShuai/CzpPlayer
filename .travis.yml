@@ -66,7 +66,7 @@ addons:
         project:
             name: "TimLiShuai/CzpPlayer"
             description: "czpplayer"
-        notification_email: pingkai010@gmail.com
+        notification_email: 13641115228@163.com
         build_command_prepend: . setup.env;cd external/;./build_external.sh Linux;cd ../;mkdir build;cd build;cmake ../;
         build_command: cmake --build . -j8
         branch_pattern: coverity_scan
